@@ -1,0 +1,35 @@
+﻿@model AMLLC.MVC.ADMONSITE.Models.LogIn
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acero Masonry LLC</title>
+    <link href="~/Content/css/LogIn.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="contenedor">
+
+        <form method="POST">
+
+            <img src="~/Content/Images/AM200x74.png" class="logo"/>
+            <br />
+            @Html.TextBoxFor(m => m.sUser, new { @class = "form-control", placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(n => n.sUser).ToHtmlString()) })
+            <br />
+            @Html.TextBoxFor(m => m.sPassword, new { @class = "form-control", placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(n => n.sPassword).ToHtmlString()) })
+            <br />
+            <input type="submit" value="@AMLLC.MVC.ADMONSITE.App_GlobalResources.Strings.Login" class="btn btn-primary btn-block" />
+
+        </form>
+
+    </div>
+</body>
+</html>
