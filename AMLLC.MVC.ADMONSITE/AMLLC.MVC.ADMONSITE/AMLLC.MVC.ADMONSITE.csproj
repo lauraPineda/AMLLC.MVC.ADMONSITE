@@ -123,16 +123,21 @@
     <Content Include="Content\css\Site.css" />
     <Content Include="Content\Images\AM200x74.png" />
     <Content Include="Content\Images\fondoLogIn.jpg" />
+    <Content Include="Content\Library\Bootstrap\bootstrap-min.js" />
+    <Content Include="Content\Library\Bootstrap\bootstrap.css" />
+    <Content Include="Content\Library\fontAwesome\font-awesome-min.css" />
+    <Content Include="Content\Library\IziToast\iziToast-min.css" />
+    <Content Include="Content\Library\IziToast\iziToast-min.js" />
+    <Content Include="Content\Library\jQuery\jquery-1.10.2-min.js" />
+    <Content Include="Content\Library\jQuery\jquery.easing-min.js" />
+    <Content Include="Content\Library\LazyLoad\LazyLoad.js" />
+    <Content Include="Content\OwnLibrary\Common\Common.js" />
+    <Content Include="Content\Resources\Image\Home\AmImagoFull.png" />
+    <Content Include="Content\Resources\Image\Home\business.jpg" />
+    <Content Include="Content\Resources\Image\Icons\AMico.png" />
+    <Content Include="Content\Resources\Image\Icons\AmImagoFull45x45.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="scripts\ai.0.22.9-build00167.js" />
-    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="scripts\bootstrap.js" />
-    <Content Include="scripts\bootstrap.min.js" />
-    <None Include="scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="scripts\jquery-1.10.2.js" />
-    <Content Include="scripts\jquery-1.10.2.min.js" />
-    <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -167,7 +172,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\LogIn\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -178,6 +182,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\OwnLibrary\Login\" />
+    <Folder Include="Content\Resources\Audio\" />
+    <Folder Include="Content\Resources\Video\" />
+    <Folder Include="Content\Resources\XML\" />
+    <Folder Include="Content\Template\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App_GlobalResources\Strings.resx">
