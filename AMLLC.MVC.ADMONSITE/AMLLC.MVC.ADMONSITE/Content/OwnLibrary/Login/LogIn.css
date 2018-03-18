@@ -5,11 +5,11 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../Images/fondoLogIn.jpg);
+    background-image: url('../../Content/Images/fondoLogIn.jpg');
     background-repeat: no-repeat;
     background-position: center;
     -moz-background-size: cover;

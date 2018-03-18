@@ -1,4 +1,5 @@
-﻿@model AMLLC.MVC.ADMONSITE.Models.LogIn
+﻿@using System.Web.Optimization;
+@model AMLLC.MVC.ADMONSITE.Models.LogIn
 
 @{
     Layout = null;
@@ -12,8 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Acero Masonry LLC</title>
-    <link href="~/Content/css/LogIn.css" rel="stylesheet" />
-    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    @Styles.Render("~/bundles/LogIn/Css")
 </head>
 <body>
     <div class="contenedor">
