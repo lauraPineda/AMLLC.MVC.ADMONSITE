@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace AMLLC.MVC.ADMONSITE
@@ -13,6 +9,8 @@ namespace AMLLC.MVC.ADMONSITE
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            App_Start.BundleConfig.RegisterBundles(System.Web.Optimization.BundleTable.Bundles);
+            System.Web.Optimization.BundleTable.EnableOptimizations = true;
         }
     }
 }
