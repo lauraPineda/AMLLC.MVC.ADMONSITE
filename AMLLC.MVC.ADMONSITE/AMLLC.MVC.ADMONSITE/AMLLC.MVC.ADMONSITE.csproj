@@ -135,6 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Library\Bootstrap\bootstrap.css" />
+    <Content Include="Content\Library\fontAwesome\fontawesome-webfont.svg" />
     <Content Include="Content\OwnLibrary\Login\LogIn.css" />
     <Content Include="Content\Images\AM200x74.png" />
     <Content Include="Content\Images\fondoLogIn.jpg" />
@@ -265,6 +266,11 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+    <Content Include="Content\Library\fontAwesome\fontawesome-webfont.eot" />
+    <Content Include="Content\Library\fontAwesome\fontawesome-webfont.ttf" />
+    <Content Include="Content\Library\fontAwesome\fontawesome-webfont.woff" />
+    <Content Include="Content\Library\fontAwesome\fontawesome-webfont.woff2" />
+    <Content Include="Content\Library\fontAwesome\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
