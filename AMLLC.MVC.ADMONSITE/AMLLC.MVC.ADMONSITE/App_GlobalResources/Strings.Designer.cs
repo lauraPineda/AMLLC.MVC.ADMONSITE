@@ -61,7 +61,7 @@ namespace AMLLC.MVC.ADMONSITE.App_GlobalResources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a LOGIN.
+        ///   Busca una cadena traducida similar a START.
         /// </summary>
         public static string Login {
             get {

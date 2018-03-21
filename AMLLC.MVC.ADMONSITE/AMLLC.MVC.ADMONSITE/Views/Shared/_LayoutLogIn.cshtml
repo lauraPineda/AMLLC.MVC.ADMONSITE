@@ -1,0 +1,22 @@
+﻿@using System.Web.Optimization;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acero Masonry LLC</title>
+    @Styles.Render("~/bundles/LogIn/Css")
+</head>
+<body>
+    <div class="contenedor">
+        <div id="spaceBetween">
+            <label class="AceroMansonryText">ACERO MASONRY LLC</label>
+        </div>
+        <div id="spaceBetween">
+            <img src="~/Content/Images/AM200x74.png" class="logo" />
+        </div>
+        @RenderBody()
+    </div>
+</body>
+</html>

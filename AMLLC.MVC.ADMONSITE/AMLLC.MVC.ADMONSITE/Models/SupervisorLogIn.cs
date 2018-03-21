@@ -7,7 +7,7 @@ using System.Web;
 
 namespace AMLLC.MVC.ADMONSITE.Models
 {
-    public class LogIn
+    public class SupervisorLogIn
     {
         [Required]
         [Display(Name = "User", ResourceType = typeof(Strings))]

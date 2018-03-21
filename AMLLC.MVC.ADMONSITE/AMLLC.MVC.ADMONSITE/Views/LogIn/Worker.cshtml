@@ -1,0 +1,26 @@
+﻿@model AMLLC.MVC.ADMONSITE.Models.WorkerLogIn
+
+@{
+    ViewBag.Title = "Worker";
+    Layout = "~/Views/Shared/_LayoutLogIn.cshtml";
+}
+
+<form method="POST">
+
+    <div id="spaceBetween">
+        <div class="input-group margin-bottom-sm">
+            <span class="input-group-addon"><i class="fa fa-user fa-2x"></i></span>
+            @Html.TextBoxFor(m => m.sUser, new { @class = "form-control input-lg", placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(n => n.sUser).ToHtmlString()) })
+        </div>
+        <div class="div-validation-error">
+            @Html.ValidationMessageFor(m => m.sUser)
+        </div>
+    </div>
+    <div id="spaceBetween">
+        <button type="submit" class="btn btn-primary btn-block btn-lg">
+            <i class="fa fa-sign-in fa-lg"></i>
+            @AMLLC.MVC.ADMONSITE.App_GlobalResources.Strings.Login
+        </button>
+    </div>
+</form>
+

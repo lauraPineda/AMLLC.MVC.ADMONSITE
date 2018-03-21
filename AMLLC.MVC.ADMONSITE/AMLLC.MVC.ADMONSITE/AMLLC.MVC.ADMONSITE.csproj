@@ -136,6 +136,7 @@
   <ItemGroup>
     <Content Include="Content\Library\Bootstrap\bootstrap.css" />
     <Content Include="Content\Library\fontAwesome\fontawesome-webfont.svg" />
+    <Content Include="Content\OwnLibrary\Login\Common.css" />
     <Content Include="Content\OwnLibrary\Login\LogIn.css" />
     <Content Include="Content\Images\AM200x74.png" />
     <Content Include="Content\Images\fondoLogIn.jpg" />
@@ -153,6 +154,8 @@
     <Content Include="Content\Resources\Image\Icons\AmImagoFull45x45.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Views\LogIn\Supervisor.cshtml" />
+    <None Include="Views\Shared\_LayoutLogIn.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -174,7 +177,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\LogIn.cs" />
+    <Compile Include="Models\SupervisorLogIn.cs" />
+    <Compile Include="Models\WorkerLogIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -183,12 +187,10 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Views\LogIn\Index.cshtml" />
     <Content Include="Content\Library\Bootstrap\less\mixins\alerts.less" />
     <Content Include="Content\Library\Bootstrap\less\mixins\background-variant.less" />
     <Content Include="Content\Library\Bootstrap\less\mixins\border-radius.less" />
@@ -271,6 +273,7 @@
     <Content Include="Content\Library\fontAwesome\fontawesome-webfont.woff" />
     <Content Include="Content\Library\fontAwesome\fontawesome-webfont.woff2" />
     <Content Include="Content\Library\fontAwesome\FontAwesome.otf" />
+    <Content Include="Views\LogIn\Worker.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

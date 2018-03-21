@@ -10,13 +10,24 @@ namespace AMLLC.MVC.ADMONSITE.Controllers
     public class LogInController : Controller
     {
         // GET: LogIn
-        public ActionResult Index()
+        public ActionResult Supervisor()
         {
             return View();
         }
 
         [HttpPost]
-        public ActionResult Index(LogIn model)
+        public ActionResult Supervisor(SupervisorLogIn model)
+        {
+            return View();
+        }
+
+        public ActionResult Worker()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Worker(WorkerLogIn model)
         {
             return View();
         }
