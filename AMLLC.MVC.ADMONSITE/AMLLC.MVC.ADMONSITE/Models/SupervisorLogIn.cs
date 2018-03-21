@@ -1,9 +1,5 @@
 ﻿using AMLLC.MVC.ADMONSITE.App_GlobalResources;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace AMLLC.MVC.ADMONSITE.Models
 {

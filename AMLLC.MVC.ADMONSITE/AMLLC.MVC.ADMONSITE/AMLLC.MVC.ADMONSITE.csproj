@@ -173,6 +173,7 @@
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CustomController.cs" />
     <Compile Include="Controllers\LogInController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -288,6 +289,7 @@
     <Folder Include="Content\Resources\Video\" />
     <Folder Include="Content\Resources\XML\" />
     <Folder Include="Content\Template\" />
+    <Folder Include="Views\Custom\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App_GlobalResources\Strings.resx">
@@ -302,6 +304,12 @@
       <LastGenOutput>Strings.es.designer.cs</LastGenOutput>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AMMLC.MVC.COMMON\AMMLC.MVC.COMMON.csproj">
+      <Project>{3d24ba70-9a2b-4ef5-84ec-dad82e7430c9}</Project>
+      <Name>AMMLC.MVC.COMMON</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
