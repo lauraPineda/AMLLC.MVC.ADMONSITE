@@ -173,8 +173,12 @@
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AssistanceController.cs" />
     <Compile Include="Controllers\CustomLanguageController.cs" />
+    <Compile Include="Controllers\EvaluationController.cs" />
     <Compile Include="Controllers\LogInController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -289,7 +293,11 @@
     <Folder Include="Content\Resources\Video\" />
     <Folder Include="Content\Resources\XML\" />
     <Folder Include="Content\Template\" />
+    <Folder Include="Views\Assistance\" />
     <Folder Include="Views\Custom\" />
+    <Folder Include="Views\Evaluation\" />
+    <Folder Include="Views\Menu\" />
+    <Folder Include="Views\Report\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App_GlobalResources\Strings.resx">
