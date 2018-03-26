@@ -5,7 +5,7 @@ namespace AMLLC.MVC.ADMONSITE.Controllers
     public class EvaluationController : CustomLanguageController
     {
         // GET: Evaluation
-        public ActionResult Index()
+        public ActionResult New()
         {
             return View();
         }

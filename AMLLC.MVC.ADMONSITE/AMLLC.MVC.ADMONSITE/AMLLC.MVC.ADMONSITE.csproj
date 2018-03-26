@@ -156,6 +156,7 @@
     <Content Include="Global.asax" />
     <Content Include="Views\LogIn\Supervisor.cshtml" />
     <Content Include="Views\Assistance\Register.cshtml" />
+    <Content Include="Views\Evaluation\New.cshtml" />
     <None Include="Views\Shared\_LayoutLogIn.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -184,6 +185,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Assistance.cs" />
+    <Compile Include="Models\NewEvaluation.cs" />
     <Compile Include="Models\SupervisorLogIn.cs" />
     <Compile Include="Models\WorkerLogIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -296,7 +298,6 @@
     <Folder Include="Content\Resources\XML\" />
     <Folder Include="Content\Template\" />
     <Folder Include="Views\Custom\" />
-    <Folder Include="Views\Evaluation\" />
     <Folder Include="Views\Menu\" />
     <Folder Include="Views\Report\" />
   </ItemGroup>
