@@ -136,6 +136,7 @@
   <ItemGroup>
     <Content Include="Content\Library\Bootstrap\bootstrap.css" />
     <Content Include="Content\Library\fontAwesome\fontawesome-webfont.svg" />
+    <Content Include="Content\OwnLibrary\Login\AMLLC.css" />
     <Content Include="Content\OwnLibrary\Login\Common.css" />
     <Content Include="Content\OwnLibrary\Login\LogIn.css" />
     <Content Include="Content\Images\AM200x74.png" />

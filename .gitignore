@@ -240,3 +240,4 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/AMLLC.MVC.ADMONSITE/AMLLC.MVC.ADMONSITE/Content/OwnLibrary/Login/AMLLC.css
