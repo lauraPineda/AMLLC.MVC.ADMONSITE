@@ -3,7 +3,7 @@ using System.Web.Mvc;
 
 namespace AMLLC.MVC.ADMONSITE.Controllers
 {
-    public class LogInController : CustomController
+    public class LogInController : CustomLanguageController
     {
         // GET: LogIn
         public ActionResult Supervisor()

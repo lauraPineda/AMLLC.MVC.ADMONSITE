@@ -5,7 +5,7 @@ using System.Web.Mvc;
 
 namespace AMLLC.MVC.ADMONSITE.Controllers
 {
-    public class CustomController : Controller
+    public class CustomLanguageController : Controller
     {
         /// <summary>
         /// Obtiene el lenguaje seleccionado por el usuario en el navegador y lo asigna
