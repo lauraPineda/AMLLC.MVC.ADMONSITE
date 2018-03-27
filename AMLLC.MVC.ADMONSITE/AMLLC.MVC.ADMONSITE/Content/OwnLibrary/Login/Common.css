@@ -81,3 +81,8 @@ body {
   position: relative;
   z-index: 100;
 }
+
+.margin-TB-2{
+    margin-bottom:0.2em;
+    margin-top:0.2em;
+}
