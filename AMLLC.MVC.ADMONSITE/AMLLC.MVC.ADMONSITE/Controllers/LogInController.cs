@@ -25,7 +25,7 @@ namespace AMLLC.MVC.ADMONSITE.Controllers
         [HttpPost]
         public ActionResult Worker(WorkerLogIn model)
         {
-            return View();
+            return RedirectToAction("Register", "Assistance");
         }
     }
 }
