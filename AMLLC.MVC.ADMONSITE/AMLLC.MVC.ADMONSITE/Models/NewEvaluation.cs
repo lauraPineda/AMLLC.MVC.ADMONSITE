@@ -1,4 +1,4 @@
-﻿using System;
+﻿using AMMLC.MVC.COMMON.Temporales;
 using System.Collections.Generic;
 
 namespace AMLLC.MVC.ADMONSITE.Models
@@ -7,7 +7,7 @@ namespace AMLLC.MVC.ADMONSITE.Models
     {
         public int IdUserEvaluation { get; set; }
         public string UserName { get; set; }
-        public List<UInt16> IdParamEval { get; set; }
-        public List<UInt16> IdEvaluation { get; set; }
+        public List<Parameter> ParamEval { get; set; }
+        public List<EvaluationStatus> Evaluation { get; set; }
     }
 }

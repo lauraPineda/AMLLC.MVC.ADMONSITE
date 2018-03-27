@@ -1360,6 +1360,13 @@ a.text-danger:hover,
 a.text-danger:focus {
   color: #843534;
 }
+.text-white {
+  color: #fff;
+}
+a.text-white:hover,
+a.text-white:focus {
+  color: #e6e6e6;
+}
 .bg-primary {
   color: #fff;
   background-color: #002a42;
@@ -1395,6 +1402,20 @@ a.bg-warning:focus {
 a.bg-danger:hover,
 a.bg-danger:focus {
   background-color: #e4b9b9;
+}
+.bg-brand {
+  background-color: #cd3232;
+}
+a.bg-brand:hover,
+a.bg-brand:focus {
+  background-color: #a42828;
+}
+.bg-aquagray {
+  background-color: #99aab3;
+}
+a.bg-aquagray:hover,
+a.bg-aquagray:focus {
+  background-color: #7c929d;
 }
 .page-header {
   padding-bottom: 9px;

@@ -43,7 +43,11 @@
   <ItemGroup>
     <Compile Include="LanguageManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Temporales\EvaluationStatus.cs" />
+    <Compile Include="Temporales\Parameter.cs" />
+    <Compile Include="Temporales\User.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

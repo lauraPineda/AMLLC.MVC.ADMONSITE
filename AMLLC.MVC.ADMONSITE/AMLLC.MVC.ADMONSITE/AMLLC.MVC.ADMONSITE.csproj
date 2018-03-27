@@ -157,6 +157,8 @@
     <Content Include="Views\LogIn\Supervisor.cshtml" />
     <Content Include="Views\Assistance\Register.cshtml" />
     <Content Include="Views\Evaluation\New.cshtml" />
+    <Content Include="Views\Evaluation\Workers.cshtml" />
+    <None Include="Properties\PublishProfiles\AMLLC.pubxml" />
     <None Include="Views\Shared\_LayoutLogIn.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -188,6 +190,7 @@
     <Compile Include="Models\NewEvaluation.cs" />
     <Compile Include="Models\SupervisorLogIn.cs" />
     <Compile Include="Models\WorkerLogIn.cs" />
+    <Compile Include="Models\WorkersEvalutation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
