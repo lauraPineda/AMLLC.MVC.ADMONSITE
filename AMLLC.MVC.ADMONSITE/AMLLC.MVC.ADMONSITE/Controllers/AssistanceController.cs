@@ -8,9 +8,17 @@ namespace AMLLC.MVC.ADMONSITE.Controllers
         // GET: Assistance
         public ActionResult Register()
         {
-            Assistance asistance = new Assistance();
+            Assistance assistance = new Assistance();
+            assistance.sWorkerName = "TEST TEST";
+            assistance.hasTodayAssisteance = false;
+            return View(assistance);
+        }
 
-            return View();
+        [HttpPost]
+        public ActionResult Register(Assistance model)
+        {
+            model.hasTodayAssisteance = true;
+            return View(model);
         }
     }
 }

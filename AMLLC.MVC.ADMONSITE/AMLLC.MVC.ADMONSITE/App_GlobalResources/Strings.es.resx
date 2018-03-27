@@ -123,6 +123,9 @@
   <data name="Password" xml:space="preserve">
     <value>Contraseña</value>
   </data>
+  <data name="WorkerName" xml:space="preserve">
+    <value>Nombre del trabajador</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Usuario</value>
   </data>

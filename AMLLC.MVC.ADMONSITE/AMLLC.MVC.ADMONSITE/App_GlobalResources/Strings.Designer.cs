@@ -86,5 +86,14 @@ namespace AMLLC.MVC.ADMONSITE.App_GlobalResources {
                 return ResourceManager.GetString("User", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Worker&apos;s name.
+        /// </summary>
+        public static string WorkerName {
+            get {
+                return ResourceManager.GetString("WorkerName", resourceCulture);
+            }
+        }
     }
 }
