@@ -32,7 +32,10 @@ body {
     text-align: left;
 }
 
-
+.margin-TB-2 {
+    margin-bottom: .2em;
+    margin-top: .2em;
+}
 
 /*Estilos para vista Register*/
 .container {

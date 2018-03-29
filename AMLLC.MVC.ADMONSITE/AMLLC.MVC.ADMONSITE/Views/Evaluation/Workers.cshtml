@@ -5,8 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <div class="container">
-    <form method="POST" action="New">
+    <form method="GET" action="New">
         <div class="row">
             <div class="bg-brand text-white text-center col-xs-12">
                 <h2><i class="fa fa-check-square-o"></i> EVALUATION</h2>
@@ -31,3 +33,12 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    $(document).ready(function () {
+        $(".cursor-pointer").on("click", function () {
+            $("form").submit();
+        });
+    });
+</script>

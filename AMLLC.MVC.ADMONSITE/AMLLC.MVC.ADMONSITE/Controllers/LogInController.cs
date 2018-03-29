@@ -14,7 +14,7 @@ namespace AMLLC.MVC.ADMONSITE.Controllers
         [HttpPost]
         public ActionResult Supervisor(SupervisorLogIn model)
         {
-            return View();
+            return RedirectToAction("Workers", "Evaluation");
         }
 
         public ActionResult Worker()
