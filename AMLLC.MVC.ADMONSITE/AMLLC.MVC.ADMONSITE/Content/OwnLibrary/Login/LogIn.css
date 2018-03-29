@@ -21,7 +21,7 @@ body {
 
 .contenedor {
     width: 90%;
-    max-width: 40em;
+    max-width: 600px;
     background: #D8D8D8;
     max-resolution: 0 auto;
     border-radius: 20px 20px;
