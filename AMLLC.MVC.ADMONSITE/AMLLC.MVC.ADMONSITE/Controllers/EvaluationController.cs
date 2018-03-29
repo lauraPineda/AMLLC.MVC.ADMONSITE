@@ -12,12 +12,17 @@ namespace AMLLC.MVC.ADMONSITE.Controllers
         {
             //Mock object
             List<User> userList = new List<User>();
-            for(int x=1; x<=6; x++ )
+            var random = new System.Random();
+            string[] NameList = new string[] { "Jorge", "Alejandro", "Pedro", "Arnold", "Santiago", "Sara" };
+            string[] LastNList = new string[] { "Pérez", "Martínez", "Petronilo", "Sosa"};
+            for (int x = 0; x <= NameList.Length - 1; x++)
             {
+                var numeroN = random.Next(NameList.Length - 1);
+                var numeroL = random.Next(LastNList.Length - 1);
                 userList.Add(new User
                 {
                     IdUser = x,
-                    UserName = "Worker " + x.ToString()
+                    UserName = NameList[numeroN] + " " + LastNList[numeroL]
                 });
             }
             return View(new WorkersEvalutation() { UserList = userList });
