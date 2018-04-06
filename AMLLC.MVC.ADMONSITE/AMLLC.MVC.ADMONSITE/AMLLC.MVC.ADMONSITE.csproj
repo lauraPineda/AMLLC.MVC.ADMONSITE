@@ -144,7 +144,7 @@
     <Content Include="Content\Library\fontAwesome\font-awesome-min.css" />
     <Content Include="Content\Library\IziToast\iziToast-min.css" />
     <Content Include="Content\Library\IziToast\iziToast-min.js" />
-    <Content Include="Content\Library\jQuery\jquery-1.10.2-min.js" />
+    <Content Include="Content\Library\jQuery\jquery-3.1.1-min.js" />
     <Content Include="Content\Library\jQuery\jquery.easing-min.js" />
     <Content Include="Content\Library\LazyLoad\LazyLoad.js" />
     <Content Include="Content\OwnLibrary\Common\Common.js" />

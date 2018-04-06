@@ -1417,6 +1417,20 @@ a.bg-aquagray:hover,
 a.bg-aquagray:focus {
   background-color: #7c929d;
 }
+.bg-gray-lighter {
+  background-color: #eeeeee;
+}
+a.bg-gray-lighter:hover,
+a.bg-gray-lighter:focus {
+  background-color: #d5d5d5;
+}
+.bg-white {
+  background-color: #fff;
+}
+a.bg-white:hover,
+a.bg-white:focus {
+  background-color: #e6e6e6;
+}
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
