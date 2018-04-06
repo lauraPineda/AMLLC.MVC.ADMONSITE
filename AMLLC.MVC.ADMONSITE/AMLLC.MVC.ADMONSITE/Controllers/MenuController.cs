@@ -4,8 +4,8 @@ namespace AMLLC.MVC.ADMONSITE.Controllers
 {
     public class MenuController : CustomLanguageController
     {
-        // GET: Menu
-        public ActionResult Index()
+        [HttpGet]
+        public ActionResult Administrator()
         {
             return View();
         }

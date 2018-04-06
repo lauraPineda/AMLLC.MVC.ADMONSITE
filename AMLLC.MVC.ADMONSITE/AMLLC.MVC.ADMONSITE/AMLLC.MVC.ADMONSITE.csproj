@@ -160,6 +160,7 @@
     <Content Include="Views\Evaluation\Workers.cshtml" />
     <None Include="Properties\PublishProfiles\AMLLC.pubxml" />
     <Content Include="Views\Shared\_HeadBodyFoot.cshtml" />
+    <Content Include="Views\Menu\Administrator.cshtml" />
     <None Include="Views\Shared\_LayoutLogIn.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -302,7 +303,6 @@
     <Folder Include="Content\Resources\XML\" />
     <Folder Include="Content\Template\" />
     <Folder Include="Views\Custom\" />
-    <Folder Include="Views\Menu\" />
     <Folder Include="Views\Report\" />
   </ItemGroup>
   <ItemGroup>

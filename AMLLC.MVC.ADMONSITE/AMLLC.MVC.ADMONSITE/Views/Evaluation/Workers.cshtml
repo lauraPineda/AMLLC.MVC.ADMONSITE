@@ -3,26 +3,21 @@
 @{
     ViewBag.Title = "Workers";
     Layout = "~/Views/Shared/_HeadBodyFoot.cshtml";
-    ViewBag.HttpMethod = "GET";
+    ViewBag.HttpMethod = "POST";
     ViewBag.Action = "New";
     ViewBag.HeadIcon = "fa-check-square-o";
     ViewBag.HeadTitle = "EVALUATION";
+    ViewBag.Backhref = "/Menu/Administrator";
 }
 
 <div class="pre-scrollable scroll_x_none">
     @foreach (var item in Model.UserList)
     {
-        <div id="Item-@item.IdUser" class="bg-white row margin-TB-2 cursor-pointer">
-            <div class="bg-brand text-white col-xs-3"><center><i class="fa fa-user fa-3x"></i></center></div>
-            <div><label>&emsp;@item.UserName</label></div>
-        </div>
+        <a data-form-method="POST" href="@Url.Action("New","Evaluation", item )">
+            <div id="Item-@item.IdUser" class="bg-white row margin-TB-2 cursor-pointer">
+                <div class="bg-brand text-white col-xs-3"><center><i class="fa fa-user fa-3x"></i></center></div>
+                <div><label>&emsp;@item.UserName</label></div>
+            </div>
+        </a>
     }
 </div>
-
-<script>
-    $(document).ready(function () {
-        $(".cursor-pointer").on("click", function () {
-            $("form").submit();
-        });
-    });
-</script>

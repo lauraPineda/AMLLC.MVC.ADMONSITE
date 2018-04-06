@@ -29,7 +29,7 @@ namespace AMLLC.MVC.ADMONSITE.Controllers
         }
 
         [HttpGet]
-        public ActionResult New(User model)
+        public ActionResult New(User data)
         {
             List<Parameter> paramList = new List<Parameter>();
             List<EvaluationStatus> evalList = new List<EvaluationStatus>();
@@ -40,8 +40,8 @@ namespace AMLLC.MVC.ADMONSITE.Controllers
             evalList.Add(new EvaluationStatus { IdEvaluation = 1, Name = "SI" });
             evalList.Add(new EvaluationStatus { IdEvaluation = 2, Name = "NO" });
 
-            return View(new NewEvaluation { IdUserEvaluation = model.IdUser
-                                          , UserName = model.UserName
+            return View(new NewEvaluation { IdUserEvaluation = data.IdUser
+                                          , UserName = data.UserName
                                           , ParamEval = paramList
                                           , Evaluation = evalList });
         }

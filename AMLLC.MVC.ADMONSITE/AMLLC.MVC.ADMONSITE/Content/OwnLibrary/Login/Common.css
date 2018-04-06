@@ -37,6 +37,11 @@ body {
     margin-top: .2em;
 }
 
+.margin-TB-15 {
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+}
+
 /*Estilos para vista Register*/
 .container {
     width: 100%;
@@ -112,4 +117,12 @@ button.Assistance-button h3 {
 
 .without-padding{
     padding:0 !important;
+}
+
+.cursor-pointer{
+    cursor:pointer;
+}
+
+.btn-sq-lg{
+    width:100% !important;
 }
