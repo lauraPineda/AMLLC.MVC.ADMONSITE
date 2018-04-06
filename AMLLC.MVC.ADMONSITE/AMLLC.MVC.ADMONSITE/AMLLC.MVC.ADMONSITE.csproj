@@ -159,6 +159,7 @@
     <Content Include="Views\Evaluation\New.cshtml" />
     <Content Include="Views\Evaluation\Workers.cshtml" />
     <None Include="Properties\PublishProfiles\AMLLC.pubxml" />
+    <Content Include="Views\Shared\_HeadBodyFoot.cshtml" />
     <None Include="Views\Shared\_LayoutLogIn.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>

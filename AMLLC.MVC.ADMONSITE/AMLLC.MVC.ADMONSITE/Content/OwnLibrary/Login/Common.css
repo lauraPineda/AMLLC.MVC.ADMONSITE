@@ -101,7 +101,7 @@ button.Assistance-button h3 {
 }    
 
 .scroll_x_none{
-    overflow-x:hidden
+    overflow-x:hidden;
 }
 
 .footer-bottom{
@@ -113,5 +113,3 @@ button.Assistance-button h3 {
 .without-padding{
     padding:0 !important;
 }
-
-max-height: inherit;
