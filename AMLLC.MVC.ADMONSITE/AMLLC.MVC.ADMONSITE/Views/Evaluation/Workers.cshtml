@@ -2,43 +2,22 @@
 
 @{
     ViewBag.Title = "Workers";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_HeadBodyFoot.cshtml";
+    ViewBag.HttpMethod = "POST";
+    ViewBag.Action = "New";
+    ViewBag.HeadIcon = "fa-check-square-o";
+    ViewBag.HeadTitle = "EVALUATION";
+    ViewBag.Backhref = "/Menu/Administrator";
 }
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<div class="container">
-    <form method="GET" action="New">
-        <div class="row">
-            <div class="bg-brand text-white text-center col-xs-12">
-                <h2><i class="fa fa-check-square-o"></i> EVALUATION</h2>
+<div class="pre-scrollable scroll_x_none">
+    @foreach (var item in Model.UserList)
+    {
+        <a data-form-method="POST" href="@Url.Action("New","Evaluation", item )">
+            <div id="Item-@item.IdUser" class="bg-white row margin-TB-2 cursor-pointer">
+                <div class="bg-brand text-white col-xs-3"><center><i class="fa fa-user fa-3x"></i></center></div>
+                <div><label>&emsp;@item.UserName</label></div>
             </div>
-        </div>
-        <div class="container">
-            @foreach (var item in Model.UserList)
-            {
-                <div id="Item-@item.IdUser" class="row margin-TB-2 bg-aquagray cursor-pointer">
-                    <div class="bg-primary col-xs-3"><center><i class="fa fa-user fa-3x"></i></center></div>
-                    <div><h3>&emsp;@item.UserName</h3></div>
-                </div>
-            }
-        </div>
-    </form>
-    <div class="row">
-        <div class="col-xs-12">
-            <button class="btn btn-primary btn-block btn-lg">
-                <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQ4OS4zOTQgNDg5LjM5NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDg5LjM5NCA0ODkuMzk0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTM3NS43ODksOTIuODY3SDE2Ni44NjRsMTcuNTA3LTQyLjc5NWMzLjcyNC05LjEzMiwxLTE5LjU3NC02LjY5MS0yNS43NDRjLTcuNzAxLTYuMTY2LTE4LjUzOC02LjUwOC0yNi42MzktMC44NzkgICBMOS41NzQsMTIxLjcxYy02LjE5Nyw0LjMwNC05Ljc5NSwxMS40NTctOS41NjMsMTguOTk1YzAuMjMxLDcuNTMzLDQuMjYxLDE0LjQ0NiwxMC43MSwxOC4zNTlsMTQ3LjkyNSw4OS44MjMgICBjOC40MTcsNS4xMDgsMTkuMTgsNC4wOTMsMjYuNDgxLTIuNDk5YzcuMzEyLTYuNTkxLDkuNDI3LTE3LjMxMiw1LjIxOS0yNi4yMDJsLTE5LjQ0My00MS4xMzJoMjA0Ljg4NiAgIGMxNS4xMTksMCwyNy40MTgsMTIuNTM2LDI3LjQxOCwyNy42NTR2MTQ5Ljg1MmMwLDE1LjExOC0xMi4yOTksMjcuMTktMjcuNDE4LDI3LjE5aC0yMjYuNzRjLTIwLjIyNiwwLTM2LjYyMywxNi4zOTYtMzYuNjIzLDM2LjYyMiAgIHYxMi45NDJjMCwyMC4yMjgsMTYuMzk3LDM2LjYyNCwzNi42MjMsMzYuNjI0aDIyNi43NGM2Mi42NDIsMCwxMTMuNjA0LTUwLjczMiwxMTMuNjA0LTExMy4zNzlWMjA2LjcwOSAgIEM0ODkuMzk1LDE0NC4wNjIsNDM4LjQzMSw5Mi44NjcsMzc1Ljc4OSw5Mi44Njd6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
-                BACK
-            </button>
-        </div>
-    </div>
+        </a>
+    }
 </div>
-
-
-<script>
-    $(document).ready(function () {
-        $(".cursor-pointer").on("click", function () {
-            $("form").submit();
-        });
-    });
-</script>

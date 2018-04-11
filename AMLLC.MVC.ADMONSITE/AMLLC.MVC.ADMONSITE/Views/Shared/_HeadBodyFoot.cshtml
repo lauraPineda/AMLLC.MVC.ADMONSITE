@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="bg-gray-lighter without-padding col-lg-offset-3 col-lg-6">
+        <form method="@ViewBag.HttpMethod" action="@ViewBag.Action">
+            <div class="row">
+                <div class="bg-primary text-white text-center col-xs-12">
+                    <h2><i class="fa @ViewBag.HeadIcon"></i> @ViewBag.HeadTitle</h2>
+                </div>
+            </div>
+            <div id="BodyContainer">
+                @RenderBody()
+            </div>
+        </form>
+        <div class="row footer-bottom">
+            <div class="col-xs-12 col-lg-6">
+                <a id="btnFootBack" href="@ViewBag.Backhref" class="btn btn-primary btn-block btn-lg">
+                    <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQ4OS4zOTQgNDg5LjM5NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDg5LjM5NCA0ODkuMzk0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTM3NS43ODksOTIuODY3SDE2Ni44NjRsMTcuNTA3LTQyLjc5NWMzLjcyNC05LjEzMiwxLTE5LjU3NC02LjY5MS0yNS43NDRjLTcuNzAxLTYuMTY2LTE4LjUzOC02LjUwOC0yNi42MzktMC44NzkgICBMOS41NzQsMTIxLjcxYy02LjE5Nyw0LjMwNC05Ljc5NSwxMS40NTctOS41NjMsMTguOTk1YzAuMjMxLDcuNTMzLDQuMjYxLDE0LjQ0NiwxMC43MSwxOC4zNTlsMTQ3LjkyNSw4OS44MjMgICBjOC40MTcsNS4xMDgsMTkuMTgsNC4wOTMsMjYuNDgxLTIuNDk5YzcuMzEyLTYuNTkxLDkuNDI3LTE3LjMxMiw1LjIxOS0yNi4yMDJsLTE5LjQ0My00MS4xMzJoMjA0Ljg4NiAgIGMxNS4xMTksMCwyNy40MTgsMTIuNTM2LDI3LjQxOCwyNy42NTR2MTQ5Ljg1MmMwLDE1LjExOC0xMi4yOTksMjcuMTktMjcuNDE4LDI3LjE5aC0yMjYuNzRjLTIwLjIyNiwwLTM2LjYyMywxNi4zOTYtMzYuNjIzLDM2LjYyMiAgIHYxMi45NDJjMCwyMC4yMjgsMTYuMzk3LDM2LjYyNCwzNi42MjMsMzYuNjI0aDIyNi43NGM2Mi42NDIsMCwxMTMuNjA0LTUwLjczMiwxMTMuNjA0LTExMy4zNzlWMjA2LjcwOSAgIEM0ODkuMzk1LDE0NC4wNjIsNDM4LjQzMSw5Mi44NjcsMzc1Ljc4OSw5Mi44Njd6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+                    BACK
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
