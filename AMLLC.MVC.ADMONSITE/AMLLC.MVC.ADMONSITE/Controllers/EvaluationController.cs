@@ -1,4 +1,4 @@
-﻿using AMMLC.MVC.COMMON.Temporales;
+﻿using AMLLC.MVC.COMMON.Temporal;
 using System.Collections.Generic;
 using System.Web.Mvc;
 using AMLLC.MVC.ADMONSITE.Models;

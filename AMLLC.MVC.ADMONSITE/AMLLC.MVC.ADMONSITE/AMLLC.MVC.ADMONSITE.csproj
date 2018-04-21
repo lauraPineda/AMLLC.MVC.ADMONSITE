@@ -320,9 +320,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AMMLC.MVC.COMMON\AMMLC.MVC.COMMON.csproj">
-      <Project>{3d24ba70-9a2b-4ef5-84ec-dad82e7430c9}</Project>
-      <Name>AMMLC.MVC.COMMON</Name>
+    <ProjectReference Include="..\AMLLC.MVC.COMMON\AMLLC.MVC.COMMON.csproj">
+      <Project>{ad975aa6-06e2-467a-9dac-dc8023c04964}</Project>
+      <Name>AMLLC.MVC.COMMON</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

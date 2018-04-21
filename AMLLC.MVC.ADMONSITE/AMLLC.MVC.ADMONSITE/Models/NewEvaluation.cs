@@ -1,4 +1,4 @@
-﻿using AMMLC.MVC.COMMON.Temporales;
+﻿using AMLLC.MVC.COMMON.Temporal;
 using System.Collections.Generic;
 
 namespace AMLLC.MVC.ADMONSITE.Models
