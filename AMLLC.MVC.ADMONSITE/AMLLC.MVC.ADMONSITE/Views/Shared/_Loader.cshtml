@@ -1,27 +1,65 @@
-﻿
-<div class="sk-cube-grid">
-    <div class="sk-cube sk-cube1"></div>
-    <div class="sk-cube sk-cube2"></div>
-    <div class="sk-cube sk-cube3"></div>
-    <div class="sk-cube sk-cube4"></div>
-    <div class="sk-cube sk-cube5"></div>
-    <div class="sk-cube sk-cube6"></div>
-    <div class="sk-cube sk-cube7"></div>
-    <div class="sk-cube sk-cube8"></div>
-    <div class="sk-cube sk-cube9"></div>
+﻿<script>
+/*** EVENTOS CARGANDO LOADING... ***/
+$(document).on({
+    ajaxStart: function () {
+        var heightHidden = $("html").height() + "px";
+        $("#jqxLoader").css("height", heightHidden);
+        $("#jqxLoader").removeClass("hidden");
+    },
+    ajaxStop: function () {
+        /*$('#jqxLoader').jqxLoader('close');*/
+        $("#jqxLoader").addClass("hidden");
+    }
+});
+
+$(document).on('submit', 'form', function () {
+    var heightHidden = $("html").height() + "px";
+    $("#jqxLoader").css("height", heightHidden);
+    $("#jqxLoader").removeClass("hidden");
+})
+</script>
+
+<div id="jqxLoader" class="hidden">
+    <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+    </div>
 </div>
 
 <style>
+
+#jqxLoader{
+    position: absolute; 
+    background-color: rgba(0,0,0,0.5); 
+    width: 100%; 
+    height: 100%; 
+    border: 1px solid #000; 
+    z-index: 99999; 
+}
+
     .sk-cube-grid {
   width: 40px;
   height: 40px;
-  margin: 100px auto;
+  z-index: 99999;
+  margin:0 !important;
+  top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+  vertical-align:central;
 }
 
 .sk-cube-grid .sk-cube {
   width: 33%;
   height: 33%;
-  background-color: #333;
+  background-color: #fff;
   float: left;
   -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
           animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
@@ -54,7 +92,7 @@
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s; }
 
-@-webkit-keyframes sk-cubeGridScaleDelay {
+@@-webkit-keyframes sk-cubeGridScaleDelay {
   0%, 70%, 100% {
     -webkit-transform: scale3D(1, 1, 1);
             transform: scale3D(1, 1, 1);
@@ -64,7 +102,7 @@
   }
 }
 
-@keyframes sk-cubeGridScaleDelay {
+@@keyframes sk-cubeGridScaleDelay {
   0%, 70%, 100% {
     -webkit-transform: scale3D(1, 1, 1);
             transform: scale3D(1, 1, 1);

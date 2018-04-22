@@ -9,6 +9,7 @@
     @Styles.Render("~/bundles/LogIn/Css")
 </head>
 <body>
+    @{Html.RenderPartial("../Shared/_Loader");}
     <div class="contenedor">
         <div id="spaceBetween">
             <label class="AceroMansonryText">ACERO MASONRY LLC</label>
@@ -19,4 +20,5 @@
         @RenderBody()
     </div>
 </body>
+    @Scripts.Render("~/bundles/Layout/Js")
 </html>
