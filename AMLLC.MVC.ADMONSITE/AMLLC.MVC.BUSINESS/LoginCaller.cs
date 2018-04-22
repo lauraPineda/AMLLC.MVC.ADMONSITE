@@ -8,7 +8,8 @@ namespace AMLLC.MVC.APICLIENT
 {
     public class LoginCaller
     {
-        Task<ResponseDTO<LoginResponseDTO>> task;
+        //Task<ResponseDTO<LoginResponseDTO>> response;
+        ResponseDTO<LoginResponseDTO> response;
         RestClient<LoginResponseDTO,UserDTO> restClient;
 
         public LoginCaller()
@@ -24,8 +25,8 @@ namespace AMLLC.MVC.APICLIENT
                 Signature = data,
                 Token = "admin"
             };
-            task = restClient.Call(request, Key.GetSupervisorLoginGet());
-            return task.Result;
+            response = restClient.Call(request, Key.GetSupervisorLoginGet()).Result;
+            return response;
         }
     }
 }

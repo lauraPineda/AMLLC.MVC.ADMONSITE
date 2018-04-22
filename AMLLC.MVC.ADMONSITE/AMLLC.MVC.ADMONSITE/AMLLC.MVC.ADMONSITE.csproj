@@ -44,6 +44,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AMLLC.CORE.ENTITIES, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMLLC.CORE.DLL\AMLLC.CORE.ENTITIES.dll</HintPath>
+    </Reference>
     <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
       <Private>True</Private>
@@ -81,8 +85,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
@@ -288,6 +292,7 @@
     <Content Include="Content\Library\fontAwesome\fontawesome-webfont.woff2" />
     <Content Include="Content\Library\fontAwesome\FontAwesome.otf" />
     <Content Include="Views\LogIn\Worker.cshtml" />
+    <Content Include="Views\Shared\_Loader.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -320,6 +325,14 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AMLLC.CORE.DLL\AMLLC.CORE.DLL.csproj">
+      <Project>{690ea202-ac2f-4fe4-89c5-b174d0ed20a9}</Project>
+      <Name>AMLLC.CORE.DLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMLLC.MVC.BUSINESS\AMLLC.MVC.APICLIENT.csproj">
+      <Project>{8dfde0cd-0f3a-43f6-b81c-9000336ec14e}</Project>
+      <Name>AMLLC.MVC.APICLIENT</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AMLLC.MVC.COMMON\AMLLC.MVC.COMMON.csproj">
       <Project>{ad975aa6-06e2-467a-9dac-dc8023c04964}</Project>
       <Name>AMLLC.MVC.COMMON</Name>

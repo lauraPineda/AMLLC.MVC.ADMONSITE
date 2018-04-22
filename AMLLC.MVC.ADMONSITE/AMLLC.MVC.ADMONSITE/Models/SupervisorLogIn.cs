@@ -11,6 +11,7 @@ namespace AMLLC.MVC.ADMONSITE.Models
         [Required]
         [Display(Name = "Password", ResourceType = typeof(Strings))]
         public string sPassword { get; set; }
+        public string Message { get; set; }
 
     }
 }

@@ -1,4 +1,9 @@
-﻿using AMLLC.MVC.ADMONSITE.Models;
+﻿using AMLLC.CORE.ENTITIES;
+using AMLLC.CORE.ENTITIES.DB;
+using AMLLC.CORE.ENTITIES.Login;
+using AMLLC.MVC.ADMONSITE.Models;
+using AMLLC.MVC.APICLIENT;
+using AMLLC.MVC.COMMON;
 using System.Web.Mvc;
 
 namespace AMLLC.MVC.ADMONSITE.Controllers
@@ -14,7 +19,29 @@ namespace AMLLC.MVC.ADMONSITE.Controllers
         [HttpPost]
         public ActionResult Supervisor(SupervisorLogIn model)
         {
-            return RedirectToAction("Workers", "Evaluation");
+            var response = new ResponseDTO<LoginResponseDTO>();
+            var caller = new LoginCaller();
+            bool redirect = false;
+
+            try
+            {
+                if (model.sUser != null && model.sPassword != null)
+                {
+                    response = caller.GetLogin(new UserDTO() { UserName = model.sUser, Password = model.sPassword });
+                    model.Message = (response.Success) ? string.Empty : response.Message;
+                    redirect = (response.Success && response.Result.IsAuthenticated) ? true : false;
+                }
+            }
+            catch (System.Exception exception)
+            {
+                model.Message = Key.GetError();
+            }
+
+            if (redirect)
+            {
+                return RedirectToAction("Administrator", "Menu");
+            }
+            return View(model);
         }
 
         public ActionResult Worker()

@@ -23,7 +23,7 @@ namespace AMLLC.MVC.TEST
         public void GetLogin()
         {
             InitializeTest();
-            response = loginCaller.GetLogin(new UserDTO() { UserName = "Jorge", Password = "TextPassword" });
+            response = loginCaller.GetLogin(new UserDTO() { UserName = "amllc", Password = "amllc" });
             AssertsForLoginTest.AssertResponseOK(response);
         }
     }

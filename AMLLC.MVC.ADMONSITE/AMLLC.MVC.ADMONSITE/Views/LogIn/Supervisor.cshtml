@@ -30,5 +30,11 @@
             @AMLLC.MVC.ADMONSITE.App_GlobalResources.Strings.Login
         </button>
     </div>
+    <div class="spaceBetween">
+        <div class="div-validation-error text-center">
+            <span class="field-validation-error">@if (@Model != null)
+            { @Model.Message }</span>
+        </div>
+    </div>
 </form>
 

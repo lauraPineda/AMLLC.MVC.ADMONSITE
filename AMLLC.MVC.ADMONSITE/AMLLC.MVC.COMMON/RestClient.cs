@@ -9,25 +9,30 @@ namespace AMLLC.MVC.COMMON
 {
     public class RestClient<T,R>
     {
-        public async Task<ResponseDTO<T>> Call(RequestDTO<R> request, string route)
+        public Task<ResponseDTO<T>> Call(RequestDTO<R> request, string route)
         {
-            var response = new ResponseDTO<T>();
-            using (var client = new HttpClient())
+            return Task.Run(() =>
             {
-                client.BaseAddress = new Uri(Key.GetBaseApiAdress());
-                client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-                StringContent content = new StringContent(JsonConvert.SerializeObject(request), System.Text.Encoding.UTF8, "application/json");
-                // HTTP POST
-                HttpResponseMessage httpResponseMessage = await client.PostAsync(route, content);
-                if (httpResponseMessage.IsSuccessStatusCode)
+                var response = new ResponseDTO<T>();
+                using (var client = new HttpClient())
                 {
-                    string data = await httpResponseMessage.Content.ReadAsStringAsync();
-                    response = JsonConvert.DeserializeObject<ResponseDTO<T>>(data);
+                    client.BaseAddress = new Uri(Key.GetBaseApiAdress());
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    StringContent content = new StringContent(JsonConvert.SerializeObject(request), System.Text.Encoding.UTF8, "application/json");
+                    // HTTP POST
+                    HttpResponseMessage httpResponseMessage = client.PostAsync(route, content).Result;
+                    if (httpResponseMessage.IsSuccessStatusCode)
+                    {
+                        string data = httpResponseMessage.Content.ReadAsStringAsync().Result;
+                        response = JsonConvert.DeserializeObject<ResponseDTO<T>>(data);
+                    }
                 }
-            }
-            return response;
+                return response;
+            });
+            
+            //return Call();
         }
     }
 }
