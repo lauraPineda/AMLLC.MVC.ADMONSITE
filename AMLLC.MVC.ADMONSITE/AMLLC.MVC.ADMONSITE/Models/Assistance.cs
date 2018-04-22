@@ -1,6 +1,4 @@
-﻿using AMLLC.MVC.ADMONSITE.App_GlobalResources;
-using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System;
 
 namespace AMLLC.MVC.ADMONSITE.Models
 {

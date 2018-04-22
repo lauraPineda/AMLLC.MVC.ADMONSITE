@@ -187,6 +187,7 @@
     <Compile Include="Controllers\CustomLanguageController.cs" />
     <Compile Include="Controllers\EvaluationController.cs" />
     <Compile Include="Controllers\LogInController.cs" />
+    <Compile Include="Controllers\ManageWorkerController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\ReportController.cs" />
     <Compile Include="Global.asax.cs">
@@ -308,6 +309,7 @@
     <Folder Include="Content\Resources\XML\" />
     <Folder Include="Content\Template\" />
     <Folder Include="Views\Custom\" />
+    <Folder Include="Views\ManageWorker\" />
     <Folder Include="Views\Report\" />
   </ItemGroup>
   <ItemGroup>
