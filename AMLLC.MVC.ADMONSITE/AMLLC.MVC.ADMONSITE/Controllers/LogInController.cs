@@ -25,7 +25,7 @@ namespace AMLLC.MVC.ADMONSITE.Controllers
 
             try
             {
-                if (model.sUser != null && model.sPassword != null)
+                if (ModelState.IsValid)
                 {
                     response = caller.GetLogin(new UserDTO() { UserName = model.sUser, Password = model.sPassword });
                     model.Message = (response.Success) ? string.Empty : response.Message;

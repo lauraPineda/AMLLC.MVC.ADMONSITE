@@ -129,4 +129,19 @@
   <data name="User" xml:space="preserve">
     <value>Usuario</value>
   </data>
+  <data name="HasTelephone" xml:space="preserve">
+    <value>¿Es teléfono inteligente?</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Proyecto</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
 </root>
