@@ -24,7 +24,7 @@ namespace AMLLC.MVC.APICLIENT
                 Signature = data,
                 Token = "admin"
             };
-            response = restClient.Call(request, Key.GetSupervisorLoginGet()).Result;
+            response = restClient.Call(request, Key.GetLoginGet()).Result;
             return response;
         }
     }

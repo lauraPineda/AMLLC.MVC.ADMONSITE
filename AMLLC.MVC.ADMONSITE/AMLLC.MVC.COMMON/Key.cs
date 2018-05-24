@@ -20,10 +20,9 @@ namespace AMLLC.MVC.COMMON
         public static string GetBaseApiAdress() { return ConfigurationManager.AppSettings["BaseApiAdress"].ToString(); }
 
         /// <summary>
-        /// Return Key: SupervisorLoginGet
+        /// Return Key: LoginGet
         /// </summary>
-        public static string GetSupervisorLoginGet() { return ConfigurationManager.AppSettings["SupervisorLoginGet"].ToString(); }
+        public static string GetLoginGet() { return ConfigurationManager.AppSettings["LoginGet"].ToString(); }
 
-        
     }
 }
