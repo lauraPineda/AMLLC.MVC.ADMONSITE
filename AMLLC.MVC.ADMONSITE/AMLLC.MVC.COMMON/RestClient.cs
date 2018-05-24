@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace AMLLC.MVC.COMMON
 {
+    /// <summary>
+    /// Clase generica que invoca un api rest.
+    /// </summary>
+    /// <typeparam name="T">Genérico para RESPONSE.</typeparam>
+    /// <typeparam name="R">Genérico para REQUEST.</typeparam>
     public class RestClient<T,R>
     {
         public Task<ResponseDTO<T>> Call(RequestDTO<R> request, string route)

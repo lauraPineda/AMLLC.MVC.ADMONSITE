@@ -166,6 +166,7 @@
     <Content Include="Views\Shared\_HeadBodyFoot.cshtml" />
     <Content Include="Views\Menu\Administrator.cshtml" />
     <Content Include="Views\ManageWorker\Add.cshtml" />
+    <Content Include="Views\ManageWorker\Update.cshtml" />
     <None Include="Views\Shared\_LayoutLogIn.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -200,6 +201,7 @@
     <Compile Include="Models\WorkerInfo.cs" />
     <Compile Include="Models\WorkerLogIn.cs" />
     <Compile Include="Models\WorkersEvalutation.cs" />
+    <Compile Include="Models\WorkerUpdate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

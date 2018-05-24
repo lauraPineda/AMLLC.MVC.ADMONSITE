@@ -20,7 +20,6 @@ namespace AMLLC.MVC.ADMONSITE.Models
         public string UserName { get; set; }
         [Display(Name = "Password", ResourceType = typeof(Strings))]
         public string Password { get; set; }
-        [Display(Name = "Project", ResourceType = typeof(Strings))]
-        public uint IdCompany { get; set; }
+        public string Message { get; set; }
     }
 }

@@ -24,5 +24,10 @@ namespace AMLLC.MVC.COMMON
         /// </summary>
         public static string GetLoginGet() { return ConfigurationManager.AppSettings["LoginGet"].ToString(); }
 
+        /// <summary>
+        /// Return Key: UserAdd
+        /// </summary>
+        public static string GetUserAdd() { return ConfigurationManager.AppSettings["UserAdd"].ToString(); }
+
     }
 }

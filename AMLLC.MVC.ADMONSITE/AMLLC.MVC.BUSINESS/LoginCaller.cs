@@ -7,15 +7,22 @@ namespace AMLLC.MVC.APICLIENT
 {
     public class LoginCaller
     {
-        //Task<ResponseDTO<LoginResponseDTO>> response;
         ResponseDTO<LoginResponseDTO> response;
         RestClient<LoginResponseDTO,UserDTO> restClient;
 
+        /// <summary>
+        /// Inicializa un objeto de la clase LoginCaller.
+        /// </summary>
         public LoginCaller()
         {
             restClient = new RestClient<LoginResponseDTO,UserDTO>();
         }
 
+        /// <summary>
+        /// Incova login api rest.
+        /// </summary>
+        /// <param name="data">UserDTO</param>
+        /// <returns></returns>
         public ResponseDTO<LoginResponseDTO> GetLogin(UserDTO data)
         {
             var request = new RequestDTO<UserDTO>()
