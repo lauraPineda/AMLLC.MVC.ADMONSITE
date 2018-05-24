@@ -1,4 +1,8 @@
 ﻿
+$(document).ready(function () {
+    Common.LoadSpinner();
+});
+
 var Common = {
     
     SomeeClean: function () {
@@ -28,6 +32,6 @@ var Common = {
             $("#jqxLoader").css("height", heightHidden);
             $("#jqxLoader").removeClass("hidden");
         })
-    }
+    },
 
 }

@@ -34,11 +34,13 @@ namespace AMLLC.MVC.ADMONSITE.Controllers
             }
             catch (System.Exception exception)
             {
+                //Falta implementar el log **********
                 model.Message = Key.GetError();
             }
 
             if (redirect)
             {
+                SessionVar.SetLoginUser(response.Result);
                 return RedirectToAction("Administrator", "Menu");
             }
             return View(model);

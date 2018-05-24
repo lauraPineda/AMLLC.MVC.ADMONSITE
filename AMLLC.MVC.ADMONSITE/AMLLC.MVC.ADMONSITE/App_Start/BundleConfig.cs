@@ -23,7 +23,8 @@ namespace AMLLC.MVC.ADMONSITE.App_Start
 
             #region JS
             bundles.Add(new ScriptBundle("~/bundles/Layout/Js").Include(
-                "~/Content/Library/jQuery/jquery-3.1.1-min.js"
+                "~/Content/Library/jQuery/jquery-3.1.1-min.js",
+                "~/Content/OwnLibrary/Common/Common.js"
                 ));
             #endregion
         }
