@@ -34,4 +34,13 @@ var Common = {
         })
     },
 
+    /* DropDowns disable/Enable functions */
+    DisableDropDown: function (item) {
+        $(item).attr("disabled", "disabled").removeClass("text-primary").addClass("text-muted");
+    },
+
+    EnableDropDown: function (item) {
+        $(item).removeAttr("disabled").removeClass("text-muted").addClass("text-primary");
+    }
+
 }

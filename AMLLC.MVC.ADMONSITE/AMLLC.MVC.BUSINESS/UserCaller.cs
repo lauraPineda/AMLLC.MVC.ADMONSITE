@@ -1,5 +1,4 @@
 ﻿using AMLLC.CORE.ENTITIES;
-using AMLLC.CORE.ENTITIES.DB;
 using AMLLC.CORE.ENTITIES.User;
 using AMLLC.MVC.COMMON;
 
@@ -35,5 +34,7 @@ namespace AMLLC.MVC.BUSINESS
             response = restClient.Call(request,Key.GetUserAdd()).Result;
             return response;
         }
+
+
     }
 }

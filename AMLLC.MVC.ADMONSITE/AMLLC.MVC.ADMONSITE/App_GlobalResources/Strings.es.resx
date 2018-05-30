@@ -130,7 +130,7 @@
     <value>Usuario</value>
   </data>
   <data name="HasTelephone" xml:space="preserve">
-    <value>¿Es teléfono inteligente?</value>
+    <value>¿Tiene teléfono?</value>
   </data>
   <data name="LastName" xml:space="preserve">
     <value>Apellido</value>
@@ -143,5 +143,17 @@
   </data>
   <data name="Telephone" xml:space="preserve">
     <value>Teléfono</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Locación</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="SelectOption" xml:space="preserve">
+    <value>Selecciona una opción</value>
   </data>
 </root>

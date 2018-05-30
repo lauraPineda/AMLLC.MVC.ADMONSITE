@@ -61,7 +61,16 @@ namespace AMLLC.MVC.ADMONSITE.App_GlobalResources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Is smartphone?.
+        ///   Busca una cadena traducida similar a Client.
+        /// </summary>
+        public static string Client {
+            get {
+                return ResourceManager.GetString("Client", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a has telephone?.
         /// </summary>
         public static string HasTelephone {
             get {
@@ -75,6 +84,15 @@ namespace AMLLC.MVC.ADMONSITE.App_GlobalResources {
         public static string LastName {
             get {
                 return ResourceManager.GetString("LastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Location.
+        /// </summary>
+        public static string Location {
+            get {
+                return ResourceManager.GetString("Location", resourceCulture);
             }
         }
         
@@ -111,6 +129,24 @@ namespace AMLLC.MVC.ADMONSITE.App_GlobalResources {
         public static string Project {
             get {
                 return ResourceManager.GetString("Project", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Role.
+        /// </summary>
+        public static string Role {
+            get {
+                return ResourceManager.GetString("Role", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Select a option.
+        /// </summary>
+        public static string SelectOption {
+            get {
+                return ResourceManager.GetString("SelectOption", resourceCulture);
             }
         }
         

@@ -10,15 +10,15 @@ namespace AMLLC.MVC.COMMON
     /// <summary>
     /// Clase generica que invoca un api rest.
     /// </summary>
-    /// <typeparam name="T">Genérico para RESPONSE.</typeparam>
-    /// <typeparam name="R">Genérico para REQUEST.</typeparam>
-    public class RestClient<T,R>
+    /// <typeparam name="TResponse">Genérico para RESPONSE.</typeparam>
+    /// <typeparam name="TRequest">Genérico para REQUEST.</typeparam>
+    public class RestClient<TResponse,TRequest>
     {
-        public Task<ResponseDTO<T>> Call(RequestDTO<R> request, string route)
+        public Task<ResponseDTO<TResponse>> Call(RequestDTO<TRequest> request, string route)
         {
             return Task.Run(() =>
             {
-                var response = new ResponseDTO<T>();
+                var response = new ResponseDTO<TResponse>();
                 using (var client = new HttpClient())
                 {
                     client.BaseAddress = new Uri(Key.GetBaseApiAdress());
@@ -31,7 +31,7 @@ namespace AMLLC.MVC.COMMON
                     if (httpResponseMessage.IsSuccessStatusCode)
                     {
                         string data = httpResponseMessage.Content.ReadAsStringAsync().Result;
-                        response = JsonConvert.DeserializeObject<ResponseDTO<T>>(data);
+                        response = JsonConvert.DeserializeObject<ResponseDTO<TResponse>>(data);
                     }
                 }
                 return response;

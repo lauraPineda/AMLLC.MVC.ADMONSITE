@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompanyCaller.cs" />
+    <Compile Include="ICRUD.cs" />
+    <Compile Include="Invoker.cs" />
     <Compile Include="LoginCaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserCaller.cs" />

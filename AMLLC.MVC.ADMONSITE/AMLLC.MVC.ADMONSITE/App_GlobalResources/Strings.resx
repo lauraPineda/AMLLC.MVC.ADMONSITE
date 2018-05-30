@@ -130,7 +130,7 @@
     <value>User</value>
   </data>
   <data name="HasTelephone" xml:space="preserve">
-    <value>Is smartphone?</value>
+    <value>has telephone?</value>
   </data>
   <data name="LastName" xml:space="preserve">
     <value>Last name</value>
@@ -143,5 +143,17 @@
   </data>
   <data name="Telephone" xml:space="preserve">
     <value>Telephone</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="SelectOption" xml:space="preserve">
+    <value>Select a option</value>
   </data>
 </root>

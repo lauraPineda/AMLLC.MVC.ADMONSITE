@@ -1,4 +1,5 @@
 ﻿using System.Configuration;
+using System.Text;
 
 namespace AMLLC.MVC.COMMON
 {
@@ -20,6 +21,11 @@ namespace AMLLC.MVC.COMMON
         public static string GetBaseApiAdress() { return ConfigurationManager.AppSettings["BaseApiAdress"].ToString(); }
 
         /// <summary>
+        /// Return Key:LogNameTxt
+        /// </summary>
+        public static string GetLogNameTxt() { return ConfigurationManager.AppSettings["LogNameTxt"].ToString(); }
+
+        /// <summary>
         /// Return Key: LoginGet
         /// </summary>
         public static string GetLoginGet() { return ConfigurationManager.AppSettings["LoginGet"].ToString(); }
@@ -28,6 +34,16 @@ namespace AMLLC.MVC.COMMON
         /// Return Key: UserAdd
         /// </summary>
         public static string GetUserAdd() { return ConfigurationManager.AppSettings["UserAdd"].ToString(); }
+
+        #region Company
+        /// <summary>
+        /// Return Key: Company + GetAll
+        /// </summary>
+        public static string CompanyGetAll() { return new StringBuilder()
+                .Append(ConfigurationManager.AppSettings["Company"].ToString())
+                .Append(ConfigurationManager.AppSettings["GetAll"].ToString())
+                .ToString(); }
+        #endregion
 
     }
 }
